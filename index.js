@@ -78,7 +78,9 @@ GarageCmdAccessory.prototype.getState = function(callback) {
       accessory.log('Error: ' + err);
       callback(err || new Error('Error getting state of ' + accessory.name));
     } else {
-      var state = stdout.toString('utf-8').trim();
+      var state = '';
+      if (stdout.indexOf('OPEN') > -1){ state = 'OPEN'; }
+      else if (stdout.indexOf('CLOSED') > -1){ state = 'CLOSED'; }
       accessory.log('State of ' + accessory.name + ' is: ' + state);
       callback(null, Characteristic.CurrentDoorState[state]);
     }
