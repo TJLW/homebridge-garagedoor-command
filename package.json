@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-garagedoor-command",
+  "name": "homebridge-garagedoor-command-modified",
   "version": "0.2.0",
   "description": "Garage Door plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/apexad/homebridge-garagedoor-command.git"
+    "url": "git://github.com/TJLW/homebridge-garagedoor-command.git"
   },
   "dependencies": {}
 }
